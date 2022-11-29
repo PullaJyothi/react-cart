@@ -18,10 +18,11 @@ function Cart() {
             },0)
             setSubTotal(total)
 
-            // let disc = Number(total * (discount/100));
-
-            // setSubTotal(total)
-            // setDiscount(disc)
+            setGst(5)
+            if(total >= 1000) {
+                setDc(0)
+                setDiscount(10)
+            }
         }
         getTotal()
     }, [cart,subTotal])
