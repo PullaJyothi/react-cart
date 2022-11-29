@@ -48,8 +48,6 @@ function Cart() {
         setCart([...cart])
     }
 
-    const updateCart = async (cart) => {}
-
     //delete product
     const delItem = (id) => {
         if(window.confirm(`Do you want to remove product?`)){
